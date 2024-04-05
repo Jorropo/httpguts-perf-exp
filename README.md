@@ -30,7 +30,7 @@ The http/net package also ([indirectly][isNotToken]) relies on
 
 Therefore, net/http could use the faster implementation of
 `ValidHeaderFieldName` to validate all three: header names, methods, and
-cookies. Introducing a more generically named `httpguts.IsToken` function
+cookie names. Introducing a more generically named `httpguts.IsToken` function
 (and implementing `httpguts.ValidHeaderFieldName` in terms of it) would
 likely make more sense, though.
 
