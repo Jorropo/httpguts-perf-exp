@@ -19,6 +19,8 @@ The alternative implementations not only eliminate those bounds checks,
 but also obviate the need for decoding strings into runes.
 As a result, they promise a significant speedup.
 
+See https://github.com/golang/go/issues/66700.
+
 ### Validating methods and cookie names in addition to header-field names
 
 The http/net package also ([indirectly][isNotToken]) relies on
